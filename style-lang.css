@@ -1,0 +1,143 @@
+/* Página dos Idiomas */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #999; /* cinza 60% */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  color: #222;
+}
+
+.titles {
+  margin-bottom: 40px;
+  color: #fff;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+.titles h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+    }
+
+.flags {
+  display: flex;
+  flex-direction: column; /* empilha as bandeiras */
+  gap: 25px;
+  align-items: center;
+}
+
+.flags a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.flags a:hover {
+  transform: scale(1.05);
+}
+
+.flags a.canada-uk {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.flags a.canada-uk::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url('https://flagcdn.com/w320/ca.png') no-repeat center/cover;
+}
+
+.flags a.canada-uk::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url('https://flagcdn.com/w320/gb.png') no-repeat center/cover;
+}
+
+.flags a.canada-fr {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.flags a.canada-fr::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: url('https://flagcdn.com/w320/ca.png') no-repeat center/cover;
+}
+
+.flags a.canada-fr::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background: url('https://flagcdn.com/w320/fr.png') no-repeat center/cover;
+}
+
+.flags img {
+  width: 200px;   /* largura fixa para todas */
+  height: 120px;  /* altura fixa para padronizar */
+  object-fit: cover; /* mantém o preenchimento */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+
+   /* Simula flâmula */
+  clip-path: polygon(
+    0 0, 100% 0, 100% 85%, 95% 100%, 0 100%
+  );
+
+   animation: wave 2s infinite ease-in-out alternate;
+}
+
+
+.flags span {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* Responsividade */
+/*Página dos Idiomas*/
+@media (max-width: 600px) {
+  .flags {
+    gap: 20px;
+  }
+  .flags img {
+    width: 80px;
+  }
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg) translateX(0); }
+  50% { transform: rotate(2deg) translateX(2px); }
+  100% { transform: rotate(-2deg) translateX(-2px); }
+}

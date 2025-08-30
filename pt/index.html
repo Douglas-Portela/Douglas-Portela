@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Meu Portfólio</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Bem-vindo ao meu portfólio</h1>
+  </section>
+
+  <section id="portfolio">
+    <h2>Meus Trabalhos</h2>
+    <div class="filter-buttons">
+      <button data-filter="all">Todos</button>
+      <button data-filter="web">Sites</button>
+      <button data-filter="img">Arts</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="card" data-category="web">
+        <img src="https://via.placeholder.com/400x250?text=Site+1" alt="Site 1">
+        <h3>Site 1</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+      <div class="card" data-category="img">
+        <img src="https://via.placeholder.com/400x250?text=Imagem+1" alt="Imagem 1">
+        <h3>Imagem 1</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+      <div class="card" data-category="web">
+        <img src="https://via.placeholder.com/400x250?text=Site+2" alt="Site 2">
+        <h3>Site 2</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+      <div class="card" data-category="img">
+        <img src="https://via.placeholder.com/400x250?text=Imagem+2" alt="Imagem 2">
+        <h3>Imagem 2</h3>
+        <p>Descrição breve do projeto.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <p>&copy; 2025 Douglas Portela — Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

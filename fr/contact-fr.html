@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="logo">Mon Portfolio</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="contact-fr.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <header>
+    <h1>Contactez-nous</h1>
+  </header>
+
+  <div class="container">
+    <form id="contactForm" action="mailto:portela.douglas.ca@outlook.com" method="POST" enctype="text/plain">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Votre Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Douglas Portela — Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
